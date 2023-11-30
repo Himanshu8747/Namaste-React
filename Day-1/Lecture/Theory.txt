@@ -1,0 +1,38 @@
+For detail usecase - https://medium.com/@kartik2406/web-development-with-vs-code-part-1-emmet-6af80f0f630c
+
+Q What is emmet ?
+->  Emmet is a plug in for many popular text editors which greatly improves HTML & CSS workflow.
+    And Emmet does fulfill what they promise, you can use short expressions to generate HTML markup, CSS.
+
+Q Difference between a library and framework?
+-> Library can be used in particular part or for providing some functionalities of a application or as a whole.
+-> Whereas framework is used to build the whole application can be used in some parts pr for some functionalities.
+
+Q What is a CDN ? Why do we use it?
+->  CDN is Content Delivery Network. 
+    We use CDN in our app to use some functionalities in our app without installing it in our app as a whole.
+    CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
+
+Q Why is React named as "React" ?
+->  React is a JavaScript library for building user interfaces. It was developed by Facebook, and the name “React” was chosen because it is meant to help developers build user interfaces that are fast and responsive, or “reactive.” 
+    The library was designed to “react” to changes in data.
+    When data in a React application changes, the components that depend on that data are automatically updated, which allows for efficient and seamless updates to the user interface. 
+    The name “React” reflects this reactive nature of the library.
+
+Q What is cross-origin in the script tag?
+-> cross-origin allows our browser to fetch data from a server that is of other domain.
+
+Q What is difference between React and ReactDom ?
+->  React is the core library used for creatingELements.
+    React and ReactDOM were only recently split into two different libraries. Prior to v0.14, all ReactDOM functionality was part of React. This may be a source of confusion, since any slightly dated documentation won't mention the React / ReactDOM distinction.
+    As the name implies, ReactDOM is the glue between React and the DOM. Often, you will only use it for one single thing: mounting with ReactDOM.render(). Another useful feature of ReactDOM is ReactDOM.findDOMNode() which you can use to gain direct access to a DOM element. 
+    (Something you should use sparingly in React apps, but it can be necessary.) If your app is "isomorphic", you would also use ReactDOM.renderToString() in your back-end code.
+    For everything else, there's React. You use React to define and create your elements, for lifecycle hooks, etc. i.e. the guts of a React application.
+
+Q What is difference between react.development.js and react.production.js?
+->  Development mode includes useful warnings and gives you access to tools that make development and debugging easier. 
+    Production mode minifies your code and better represents the performance your app will have on end users' devices.
+
+Q What is async and differ in script tag?
+->  Async allows your script to run as soon as it's loaded, without blocking other elements on the page. 
+    Defer means your script will only execute after the page has finished loading.    
