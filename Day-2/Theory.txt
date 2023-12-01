@@ -1,0 +1,56 @@
+Q1  What is NPM ?
+->  NPM is everything but not node package manager.Yes it manages the packages and used to install 
+    and uninstall the packages required in our project.
+    npm is a package manager for the JavaScript programming language maintained by npm, Inc. 
+    npm is the default package manager for the JavaScript runtime environment Node.js and is included as a recommended feature in the Node.js installer.
+
+Q2  What is Parcel/Webpack ? Why do we need it ?
+->  Parcel/Webpack are code bundlers that are used tgo bundle all our files in the app.
+    We need them in our app because react alone cannot provide all the functionalities that app needs to serve faster.
+    Parcel comes with many of the features required development server , hot module reload , zero cnfiguration , diagnostics -> show errors in more explained way , 
+    it does code Minification , Image ooptimization, Compression , Code-splitting snd much more.
+
+Q3  What is .parcel_cache?
+->  parcel_cache stores the file bundles and only updates or runs the chnaged elements not the entire app.
+    parcel-cache in parcel stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch.
+
+Q4  What is npx ?
+    NPX stands for Node Package eXecute. It is simply an NPM package runner. It allows developers to execute any Javascript Package available on the NPM registry without even installing it. 
+    NPX is installed automatically with NPM version 5.2. 0 and above.
+
+ Q5 What is difference between dependencies and devdependencies?
+    -Dependencies: In package.json file, there is an object called dependencies and it consists of all the packages that are used in the project with its version number.
+    So, whenever you install any library that is required in your project that library you can find it in the dependencies object.   
+    -Dev Dependencies: In package.json file, there is an object called as dev Dependencies and it consists of all the packages that are used in the project in its development phase and not in the production or testing environment with its version number.
+    So, whenever you want to install any library that is required only in your development phase then you can find it in the dev Dependencies object. 
+
+Q6  What is tree shaking?
+->  Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
+    It relies on the import and export statements to detect if code modules are exported and imported for use between JavaScript files. 
+    In modern JavaScript applications, we use module bundlers (e.g., webpack or Rollup) to automatically remove dead code when bundling multiple JavaScript files into single files.
+    This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+
+Q7  What is Hot Module Replacement?
+->  Hot Module Replacement (HMR) exchanges, adds, or removes modules while an application is running, without a full reload. 
+    This can significantly speed up development in a few ways: Retain application state which is lost during a full reload.
+
+Q8  Describe any 5 superpowers of Parcel ? Explain any 3 of them?
+->  Hot Module Replacement , Caching , Code Splitting , Minifaction , Local Server.
+    Caching - Can be used for faster builds as it will not build the whole project from the start.
+    Minification - All code in multiple files are minified and mapped into a single file.
+    Diagnostic - Helps in watching the code and show errors in a understandable manner.
+
+Q9  What is a .gitignore file? What should we add and not add into it ?
+->  gitignore file is created using .gitignore.md used to track files.
+    The files we add in gitignore file the , files added into this file is not pushed onto github.
+
+Q10 What is diff between package.json and package-lock.json ?
+->  package.json keeps the track of packages installed with its version.
+    package-lock.json keeps the track of packages installed with its exact version number and its transitive dependencies.
+    we can push both the files on github and can install the packages required to run the app.
+
+Q11 Why should i not modify package-lock.json?
+->  If we modify anything into package-lock.json file we may loose the exact verison of any of the package,
+    and it may cause an error while running the app if there are any major upgrade into version.
+
+Q12
