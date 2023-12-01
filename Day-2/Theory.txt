@@ -53,4 +53,14 @@ Q11 Why should i not modify package-lock.json?
 ->  If we modify anything into package-lock.json file we may loose the exact verison of any of the package,
     and it may cause an error while running the app if there are any major upgrade into version.
 
-Q12
+Q12 What is 'node_modules' ? Is ot a godd idea to push it onto github?
+->  Node modules folder contains all the code for packages that we have installed and also code for its transitive dependencies.
+    The size of the node_modules folder may vary from project to project and that folder can be reproduced using package.json so no need to push it onto github.
+
+Q13 What is the 'dist' folder ?
+->  The dist folder, short for distribution folder, is dynamically generated when using the nuxt generate commands and includes the generated production ready 
+    HTML files and assets that are necessary to deploy and run your statically generated application.
+
+Q14 What is browserslist ?
+->  browserslist is a configuration file that determines which browsers your project should support.
+    It is used by many tools, including Autoprefixer, Babel, and Stylelint, to automatically add vendor prefixes and polyfills to your CSS and JavaScript code.
