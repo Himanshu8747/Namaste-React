@@ -1,0 +1,68 @@
+Q1. Is JSX Mandatory for react?
+->  No JSX is not mandatory for react. We can write code without JSX too. JSX improves readability nad helps developer coming from html to be able to grasp easily.
+    JSX is not a requirement for using React. Using React without JSX is especially convenient when you don’t want to set up compilation in your build environment.
+    Each JSX element is just syntactic sugar for calling React.createElement(component, props, ...children). So, anything you can do with JSX can also be done with just plain JavaScript.
+
+Q2. Is ES6 mandatory for react ?
+->  No ES6 is not mandatory for react. If we don’t use ES6 in react, there is an alternative to perform. We use create-react-class instead of ES6.
+    example- 
+    class SayHello extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {message: 'Hello!'};
+        }
+  
+        // Using an arrow here binds the method:
+        handleClick = () => {
+        alert(this.state.message);
+        };
+
+        render() {
+            return (
+                <button onClick={this.handleClick}>
+                    Say hello
+                </button>
+            );
+        }     
+    }
+
+Q3. {TitleComponent} VS <TitleComponent/> VS <TitleComponent></TitleComponent> in JSX ?
+-> All the 3 mentioned syntax are used to render a Component.
+    {component} is used to just render the component. -> check whether if we can pass props in this way !!.
+    <component/> is used as a shorthand syntax.
+    <component></component> can be used when we need childrens to be passed between component.
+
+Q4. How can I write comments in jSX?
+-> using syntax {/* */}
+
+Q5. What is <React.Fragment></React.Fragment> and <></> ?
+->  React fragments are used to avoid unnecessary render elements.
+    for example if a parent has many childrens all the childrens are wrapped in their particular parent i.e<div></div>
+    so rendering them will cause and unnecessary rendering of many elements to avoid that we can use React.Fragment.
+    <></> is a shorthand for react.fragment.
+
+Q6. What is Virtual dom ?
+->  Virtual dom is a copy of the DOM. WHich keeps track of the changed nodes.
+
+Q7. What is Reconciliation in React?
+->  React Reconciliation is the process through which React updates the Browser DOM. It makes the DOM updates faster in React. 
+    It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
+
+Q8. What is React Fiber?
+->  React Fiber is a concept of ReactJS that is used to render a system faster and smoother.
+    After certain changes who is the next element to render the system called reconciler. This algorithm helps to compare two DOM trees and diff them. React fiber helps to do it better.
+
+Q9. Why do we need keys in react ? when do we need keys in React?
+->  Keys are used in React to identify which items in the list are changed, updated, or deleted. Keys are used to give an identity to the elements in the lists.
+    A “key” is a special string attribute you need to include when creating lists of elements in React.    
+
+Q10 Can we use index as keys in react?
+->  Yes we can use index as keys in react but it is not the recommended!.
+    When a unique identifier is not available in our object only that time we can think of using index as keys.
+
+Q11 What is props in React?
+->  Props in react are a way to pass data to the components from a parent to child.
+
+Q12 What is a Config Driven UI?
+->  Config-driven UI is a technique that allows you to create user interfaces based on a configuration file, such as JSON, 
+    or a TypeScript file that defines the layout and content of the UI components. This can be useful for creating dynamic and customizable UIs without hard coding them.
