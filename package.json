@@ -4,7 +4,7 @@
   "description": "Deep dive into React",
   "scripts": {
     "test": "jest",
-    "start": "parcel Day-3/index.html",
+    "start": "parcel Day-4/index.html",
     "build": "parcel build Day-2/index.html"
   },
   "repository": {
