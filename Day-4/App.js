@@ -11,7 +11,7 @@ const Header=()=>{
                 <div className="img-container">
                     <img alt="logo" src="https://cdn.vectorstock.com/i/preview-1x/73/82/food-logo-vector-38377382.jpg"/>
                 </div>
-                <h1>Pet Pooja</h1>
+                <h1 style={{marginLeft:"20%"}}>Pet Pooja</h1>
             
             <div className="nav-items">
                 <ul>
@@ -120,7 +120,7 @@ const Card=(props)=>{
             <h3>Name - {foodItem}</h3>
             <span>{cuisine}</span><br></br>
             <span>Price For Two* {priceForTwo} /-</span><br></br>
-            <span>Delivery in - {deliveryTiming}Mins</span><br></br>
+            <span>Delivery in - {deliveryTiming}</span><br></br>
         </div>
     )
 }
