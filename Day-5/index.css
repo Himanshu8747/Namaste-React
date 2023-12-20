@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.header{
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.img-container{
+  height: 80px;
+}
+.img-container img{
+  margin-left: 20px;
+  height: 80%;
+}
+.nav-items >ul{
+  display: flex;
+}
+
+.nav-items > ul >li{
+  margin: 10px;
+  padding: 10px;
+  margin-right:40px;
+  list-style: none;
+}
+
+.card{
+  width: 15%;
+  margin: 12px;
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+}
+
+.card-img img{
+  height: 120px;
+}
+.card-container{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-left: 7%;
+}
+.serach-container{
+  width: 600px;
+  justify-content: center;
+  margin-bottom: 2%;
+  display: flex;
+}
+.search-box{
+  margin: 20px 20px;
+  font-family: inherit;
+  width: 80%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.search-button{
+  background: black;
+  width: 100%;
+  margin: 20px;
+  padding: 7px 0;
+  font-family: inherit;
+  font-size: 18px;
+  color: white;
+  border-radius: 20px;
+}
+.clear-button{
+  background: rgb(230, 221, 221);
+  width: 80%;
+  margin: 20px;
+  padding: 7px 0;
+  font-family: inherit;
+  font-size: 18px;
+  color:black;
+  border-radius: 20px;
+}
