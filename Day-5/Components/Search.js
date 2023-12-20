@@ -4,7 +4,7 @@ import { MOCK_DATA } from "../constants";
 const Search = ({allData,setData}) => {
     const [searchText,setSearchText] = useState('');
     const handleSearch=()=>{
-        let searchResult = MOCK_DATA.filter((name)=>name.Restaurantname.match(searchText));
+        let searchResult = MOCK_DATA.filter((name)=> name.Restaurantname.match(searchText) || name.foodItem.match(searchText) );
         setData(searchResult);
     }
     const clearSearch=()=>{
